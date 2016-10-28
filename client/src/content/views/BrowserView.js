@@ -4,8 +4,12 @@ module.exports = Backbone.View.extend({
   template: _.template("<div><% _.each(browsers, function(browser) { %> <span id='<%= browser%>' class='browser <%= browser && browser.browser || browser%>'></span><% }); %> </div><div class='versions'></div>"),
   initialize: function (options) {
     this.data = options.data;
-    if (this.data) {
+    if (this.data && this.data != "not found") {
       this.browsers = this.data;
+      this.render();
+      return this;
+    } else if (this.data && this.data === "not found") {
+      this.browsers = ["unknown"];
       this.render();
       return this;
     }

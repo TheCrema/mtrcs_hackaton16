@@ -35,7 +35,8 @@ module.exports = Backbone.View.extend({
   renderBrowserView: function (data) {
     if (data && data.content && data.content.length === 0) {
       this.browserView = new BrowserView({
-        el: $(".browsers")
+        el: $(".browsers"),
+        data: "not found"
       })
       return;
     }
