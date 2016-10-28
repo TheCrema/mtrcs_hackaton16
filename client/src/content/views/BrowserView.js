@@ -1,18 +1,18 @@
 module.exports = Backbone.View.extend({
-  el: ".content",
-  template: _.template("<div class=''>Going to be our BrowserView</div>"),
+  template: _.template("<div><% _.each(browsers, function(browser) { %> <div><%= browser%></div><% }); %> </div>"),
   initialize: function () {
-    this.render();
+    this.getBrowsers();
   },
   render: function () {
-    this.$el.html(this.template());
-    this.subRender();
+    this.$el.html(this.template({browsers: this.browsers}));
   },
-  subRender: function () {
+  getBrowsers: function () {
     $.ajax({
       url: "service/browsers"
-    }).done(function () {
-      console.log("done");
-    });
-  }
+    }).done(_.bind(this.renderBrowsers, this));
+  },
+  renderBrowsers: function (browsers) {
+    this.browsers = browsers;
+    this.render();
+  } 
 });

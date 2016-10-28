@@ -2,7 +2,7 @@ var BrowserView = require("./views/BrowserView");
 
 module.exports = Backbone.View.extend({
   el: ".content",
-  template: _.template("<div class=''>Going to be our Navigation</div>"),
+  template: _.template("<div class=''><div class='browsers'></div></div>"),
   initialize: function () {
     this.render();
   },
