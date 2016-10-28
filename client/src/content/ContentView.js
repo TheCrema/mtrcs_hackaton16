@@ -1,6 +1,6 @@
 module.exports = Backbone.View.extend({
   el: ".content",
-  template: _.template("<div class=''>Going to be our Navigation</div>"),
+  template: _.template("<div class=''>Going to be our Content</div>"),
   initialize: function () {
     this.render();
   },

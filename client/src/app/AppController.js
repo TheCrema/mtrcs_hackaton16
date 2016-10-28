@@ -3,7 +3,7 @@ var SearchView = require("../search/SearchView");
 
 module.exports = Backbone.View.extend({
   el: ".app",
-  template: _.template("<div class='navigation'></div><div class='content'></div>"),
+  template: _.template("<div class='search'></div><div class='content'></div>"),
   initialize: function () {
     this.render();
   },
@@ -13,7 +13,7 @@ module.exports = Backbone.View.extend({
   },
   subRender: function () {
     this.searchView = new SearchView({
-      el: $("navigation")
+      el: $(".search")
     });
     this.contentView = new ContentView({
       el: $(".content")
