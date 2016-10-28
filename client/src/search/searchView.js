@@ -19,6 +19,13 @@ module.exports = Backbone.View.extend({
     this.searchValue = evt.target.value;
   },
   onClear: function () {
-    console.log("CLEAR clicked");
+    this.$("input").val("");
+    this.renderBrowserView();
+  },
+  getResult: function () {
+    console.log(this.searchValue);
+  },
+  renderBrowserView: function () {
+    
   }
 });
