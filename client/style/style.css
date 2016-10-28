@@ -13,13 +13,23 @@ html, body {
   text-align: center;
   font-weight: bold;
   font-size: 60px;
-  height: 200px;
+  height: 150px;
+}
+.info {
+  font-size: 20px;
+  text-align: center;
+  color: #f6ffaf;
 }
 .search {
   background-color: #20B2AA;
   padding: 20px 0;
   margin-bottom: 40px;
   text-align: center;
+  color: whitesmoke;
+}
+.search input {
+  width: 30%;
+  height: 5%;
 }
 .content {
   background-color: bisque;
