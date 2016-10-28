@@ -1,5 +1,5 @@
 module.exports = Backbone.View.extend({
-  template: _.template("<ul><% _.each(properties, function(property) { %> <li class='property'><%= property.propertyName%></li><% }); %></ul>"),
+  template: _.template("<div style='text-align:left;'><ul><% _.each(properties, function(property) { %> <li class='property'><%= property.propertyName%></li><% }); %></ul></div>"),
   initialize: function (options) {
     this.browser = options.browser;
     this.version = options.version;

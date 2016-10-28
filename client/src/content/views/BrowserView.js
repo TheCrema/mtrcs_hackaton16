@@ -1,8 +1,14 @@
 var VersionsView = require("./VersionsView");
 
 module.exports = Backbone.View.extend({
-  template: _.template("<div><% _.each(browsers, function(browser) { %> <span id='<%= browser%>' class='browser <%= browser%>'></span><% }); %> </div><div class='versions'></div>"),
-  initialize: function () {
+  template: _.template("<div><% _.each(browsers, function(browser) { %> <span id='<%= browser%>' class='browser <%= browser && browser.browser || browser%>'></span><% }); %> </div><div class='versions'></div>"),
+  initialize: function (options) {
+    this.data = options.data;
+    if (this.data) {
+      this.browsers = this.data;
+      this.render();
+      return this;
+    }
     this.getBrowsers();
   },
   events: {
