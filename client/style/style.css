@@ -1,5 +1,5 @@
 html, body {
-  background-color: whitesmoke;
+  background-color: #fff7e5;
 }
 
 .navigation {
@@ -18,7 +18,8 @@ html, body {
 .info {
   font-size: 20px;
   text-align: center;
-  color: #f6ffaf;
+  color: #fff698;
+  font-family: serif;
 }
 .search {
   background-color: #20B2AA;
@@ -28,8 +29,12 @@ html, body {
   color: whitesmoke;
 }
 .search input {
-  width: 30%;
-  height: 5%;
+  width: 500px;
+  height: 40px;
 }
 .content {
+}
+.footer{
+  background-color: #0b5c8c;
+  margin-bottom: 0;
 }
