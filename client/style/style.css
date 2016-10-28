@@ -1,4 +1,9 @@
+* {
+  margin: 0;
+}
+
 html, body {
+  height: 100%;
   background-color: #fff7e5;
 }
 
@@ -6,6 +11,14 @@ html, body {
 
 }
 
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
 .header {
   background-color: #20B2AA;
   color: whitesmoke;
@@ -34,7 +47,14 @@ html, body {
 }
 .content {
 }
-.footer{
-  background-color: #0b5c8c;
-  margin-bottom: 0;
+.site-footer, .page-wrap:after {
+  height: 142px;
 }
+.site-footer {
+  background-color: #02778c;
+  color: whitesmoke;
+  padding-top:70px;
+  text-align: right;
+  padding-right: 10px;
+}
+.chrome
