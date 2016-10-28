@@ -54,9 +54,10 @@ html, body {
 .site-footer {
   background-color: #02778c;
   color: whitesmoke;
-  padding-top:20px;
-  text-align: right;
+  padding-top:30px;
+  text-align: center;
   padding-right: 20px;
+  font-weight: bold;
 }
 .browsers {
   text-align: center;
