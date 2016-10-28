@@ -4,7 +4,7 @@
 
 html, body {
   height: 100%;
-  background-color: #fff7e5;
+  background-color: #fbf7ef;
 }
 
 .navigation {
@@ -28,11 +28,13 @@ html, body {
   font-weight: bold;
   font-size: 60px;
   height: 150px;
+  font-family: "DejaVu Sans";
 }
 .info {
-  font-size: 20px;
+  padding-top: 20px;
+  font-size: 25px;
   text-align: center;
-  color: #fff698;
+  color: #fff64d;
   font-family: serif;
 }
 .search {
@@ -61,6 +63,7 @@ html, body {
 }
 .browsers {
   text-align: center;
+  cursor: pointer;
 }
 .browser {
   display: inline-block;
@@ -89,7 +92,7 @@ html, body {
 }
 .versions {
   text-align: center;
-  color: #ff684f;
+  color: #02778c;
   font-size: 30px;
   padding-top:50px;
   
@@ -97,4 +100,9 @@ html, body {
 }
 .unknown {
   background-image: url("../images/images/nothing_found.png")
+}
+.search img {
+  vertical-align: bottom;
+  height: 40px;
+  padding-right: 7px;
 }

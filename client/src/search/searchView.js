@@ -2,7 +2,7 @@ var BrowserView = require("../content/views/BrowserView");
 
 module.exports = Backbone.View.extend({
   el: ".content",
-  template: _.template("<div>SEARCH: <input type='text'></input><span class='clear'>X</span></div>"),
+  template: _.template("<div><img src='../../images/images/1477667427_old-zoom-original.png'/><input type='text'></input><span class='clear'><img src='../../images/images/1477667586_close.png'/></span></div>"),
   events: {
     "change input": "onChange",
     "click .clear": "onClear"
