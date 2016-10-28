@@ -57,4 +57,6 @@ html, body {
   text-align: right;
   padding-right: 10px;
 }
-.chrome
+.Safari {
+  background-image: url("../images/images/logo_safari.png");
+}
