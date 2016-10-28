@@ -1,7 +1,7 @@
 var PropertyView = require("./PropertyView");
 
 module.exports = Backbone.View.extend({
-  template: _.template("<div><% _.each(versions, function(version) { %> <span class='version'><%= version%></span><% }); %></div>"),
+  template: _.template("<div><% _.each(versions, function(version) { %> <span class='version'><%= version%></span><% }); %></div><div class='properties'></div>"),
   events: {
     "click .version": "onVersionClick"
   },
