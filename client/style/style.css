@@ -96,5 +96,5 @@ html, body {
 
 }
 .unknown {
-  background-color: red;
+  background-image: url("../images/images/nothing_found.png")
 }
