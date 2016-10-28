@@ -1,5 +1,5 @@
 var ContentView = require("../content/ContentView");
-var SearchView = require("../search/SearchView");
+var SearchView = require("../search/searchView");
 
 module.exports = Backbone.View.extend({
   el: ".app",
