@@ -1,6 +1,6 @@
-global._ = require("underscore");
-global.$ = require("jquery");
-global.Backbone = require("backbone");
+global._ = require("Underscore");
+global.$ = require("jQuery");
+global.Backbone = require("Backbone");
 
 var AppView = require("./app/AppController");
 
