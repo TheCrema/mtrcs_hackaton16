@@ -57,6 +57,33 @@ html, body {
   text-align: right;
   padding-right: 10px;
 }
+.browsers {
+  text-align: center;
+}
+.browser {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+
+}
 .Safari {
   background-image: url("../images/images/logo_safari.png");
+  box-shadow: darkslategrey;
+
+}
+.Chrome {
+  background-image: url("../images/images/logo_chrome.png")
+}
+.Opera {
+  background-image: url("../images/images/logo_opera.png")
+}
+.Firefox {
+  background-image: url("../images/images/logo_firefox.png")
+}
+.Internet.Explorer {
+  background-image: url("../images/images/logo_ie.png")
+}
+.Microsoft.Edge {
+  background-image: url("../images/images/logo_msEdge.png")
 }
