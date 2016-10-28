@@ -9,6 +9,10 @@ module.exports = Backbone.View.extend({
     this.subRender();
   },
   subRender: function () {
-    
+    $.ajax({
+      url: "service/browsers"
+    }).done(function () {
+      console.log("done");
+    });
   }
 });
