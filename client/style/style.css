@@ -23,6 +23,7 @@ html, body {
   background-color: #20B2AA;
   color: whitesmoke;
   padding-top: 30px;
+  padding-bottom: 0px;
   text-align: center;
   font-weight: bold;
   font-size: 60px;
@@ -69,8 +70,6 @@ html, body {
 }
 .Safari {
   background-image: url("../images/images/logo_safari.png");
-  box-shadow: darkslategrey;
-
 }
 .Chrome {
   background-image: url("../images/images/logo_chrome.png")
@@ -86,4 +85,12 @@ html, body {
 }
 .Microsoft.Edge {
   background-image: url("../images/images/logo_msEdge.png")
+}
+.versions {
+  text-align: center;
+  color: #ff684f;
+  font-size: 30px;
+  padding-top:50px;
+  
+
 }
